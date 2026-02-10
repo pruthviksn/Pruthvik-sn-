@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Uday Kumar | Creative Profile</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    min-height:100vh;
+    color:#1f2937;
+}
+
+
+nav{
+    background:rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding:16px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    border-bottom:1px solid rgba(0,0,0,0.1);    
+}
+
+nav h1{
+    font-size:24px;
+    color:#7c3aed;
+}
+
+nav a{
+    margin-left:18px;
+    text-decoration:none;
+    font-weight:600;
+    color:#374151;
+}
+
+nav a:hover{
+    color:#7c3aed;
+}
+
+
+.hero{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:44px;
+}
+
+.hero span{
+    color:#7c3aed;
+}
+
+.hero p{
+    margin-top:12px;
+    font-size:18px;
+    color:#4b5563;
+}
+
+.hero button{
+    margin-top:28px;
+    padding:12px 34px;
+    background:linear-gradient(90deg,#7c3aed,#ec4899);
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    opacity:0.9;
+}
+
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+section h3{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+}
+
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill{
+    padding:18px 28px;
+    background:white;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:transform 0.3s;
+}
+
+.skill:hover{
+    transform:scale(1.1);
+}
+
+
+.contact-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    max-width:450px;
+    margin:auto;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+}
+
+button.submit{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#7c3aed;
+    color:white;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#374151;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Uday</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h2>Hi, I’m <span>Uday Kumar</span></h2>
+    <p>Diploma Student • AIML • Web Developer</p>
+    <button onclick="alert('Welcome to my creative space!')">Let’s Go</button>
+</div>
+
+<section id="about">
+    <h3>About Me</h3>
+    <p style="text-align:center;max-width:700px;margin:auto;color:#374151;">
+        I’m a diploma student exploring Artificial Intelligence, Machine Learning,
+        and creative web development with modern designs.
+    </p>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive UI</div>
+        <div class="skill">AIML Basics</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h3>Contact Me</h3>
+    <div class="contact-card">
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="submit" type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+     2026 Uday Kumar | All Rights Reserved
+</footer>
+
+<script>
+function sendMessage(e){
+    e.preventDefault();
+    alert("Message sent successfully!");
+}
+</script>
+
+</body>
+</html>
