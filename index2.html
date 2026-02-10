@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uday Kumar | Modern Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background:#0b0f19;
+    color:#e5e7eb;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+nav h1{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav a{
+    color:#9ca3af;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#ffffff;
+}
+
+/* Hero */
+.hero{
+    min-height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h2{
+    font-size:54px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero h2 span{
+    background:linear-gradient(90deg,#6366f1,#22d3ee);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    max-width:600px;
+    font-size:18px;
+    color:#9ca3af;
+}
+
+/* Button */
+.btn{
+    margin-top:35px;
+    padding:14px 36px;
+    background:linear-gradient(90deg,#6366f1,#22d3ee);
+    border:none;
+    border-radius:30px;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Sections */
+section{
+    padding:80px 60px;
+}
+
+section h3{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #1f2937;
+}
+
+.card h4{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.card p{
+    color:#9ca3af;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    font-size:14px;
+    color:#6b7280;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero h2{
+        font-size:36px;
+    }
+
+    section{
+        padding:60px 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Uday</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h2>Building <span>Modern</span><br>Web Experiences</h2>
+    <p>
+        AIML diploma student focused on clean UI,
+        modern design systems, and professional web development.
+    </p>
+    <button class="btn">Contact Me</button>
+</div>
+
+<section id="about">
+    <h3>About Me</h3>
+    <p style="max-width:700px;color:#9ca3af;">
+        I am a motivated student learning Artificial Intelligence,
+        Machine Learning, and modern web technologies with a
+        strong focus on clean, minimal, and professional design.
+    </p>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>HTML & CSS</h4>
+            <p>Semantic, responsive, modern layouts</p>
+        </div>
+        <div class="card">
+            <h4>JavaScript</h4>
+            <p>Interactive UI and logic building</p>
+        </div>
+        <div class="card">
+            <h4>AI & ML Basics</h4>
+            <p>Foundations of intelligent systems</p>
+        </div>
+        <div class="card">
+            <h4>UI Design</h4>
+            <p>Minimal, clean, modern interfaces</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h3>Contact</h3>
+    <p style="color:#9ca3af;">Email: your@email.com</p>
+    <p style="color:#9ca3af;">Location: Karnataka, India</p>
+</section>
+
+<footer>
+     2026 Uday Kumar | Modern Portfolio
+</footer>
+
+</body>
+</html>
